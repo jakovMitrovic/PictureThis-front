@@ -1,0 +1,22 @@
+.card{
+    display: block;
+    width: 20vh;
+    padding-bottom: 1vh;
+    background-color: rgb(239, 239, 239);
+    color: rgb(29, 29, 29);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 200ms;
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+img{
+    width: 100%;
+}
+
+.desc{
+    text-align: center;
+}

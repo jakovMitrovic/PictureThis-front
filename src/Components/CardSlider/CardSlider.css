@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    margin-left: 10vh;
+    margin-top: 0.5em;
+    
+}
+
+.slider{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 0.5em;
+    
+}
+
+.msg{
+    font-size: 50px;
+   
+    font-style: italic;
+    color: rgb(112, 112, 112);
+}
+.msg span{
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+
+}
+

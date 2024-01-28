@@ -1,0 +1,49 @@
+@keyframes slideInFromLeft {
+
+    100% {
+        opacity: 100%;
+    }
+
+    80% {
+        opacity: 80%;
+    }
+
+    60% {
+        opacity: 60%;
+    }
+
+    40% {
+        opacity: 40%;
+    }
+
+    20% {
+        opacity: 20%;
+    }
+
+    0% {
+        opacity: 10%;
+    }
+}
+
+.banner_img {
+    width: 100vw !important;
+    height:600px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    object-position: 80% 20%;
+
+
+    object-fit: cover;
+    transition: ease-in;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    
+}
+
+.banner__bg{
+    background-color: rgb(29, 29, 29);
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    
+}
