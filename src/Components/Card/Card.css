@@ -2,21 +2,76 @@
     display: block;
     width: 20vh;
     padding-bottom: 1vh;
-    background-color: rgb(239, 239, 239);
+    /* background-color: rgb(239, 239, 239); */
     color: rgb(29, 29, 29);
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 200ms;
+    overflow: hidden;
+    min-width: 15em;
+    min-height: 23em; 
+    background-color: white;
+    
+}
+
+
+.img_container{
+    height: 12em;  
+    width: 12em;
+    margin: auto;
 
 }
+
 .card:hover{
-    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9;
 }
 
 img{
     width: 100%;
 }
 
+
 .desc{
     text-align: center;
+    margin-top: -1em;
+ 
+}
+
+.on_sale{
+    text-decoration: line-through;
+    color: rgba(124, 124, 124, 0.346);
+    font-size: large;
+
+}
+
+.price{
+    font-size: x-large;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.button_container{
+    margin: auto;
+    text-align: center;
+    
+    
+    
+}
+.card button{
+    padding: 0;
+    font-size: medium;
+    
+}
+
+.price_container{
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin-top: -2em !important;
+    padding: 0;
+    
 }

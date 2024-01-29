@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <div className='nav__container'>
+        <div className='navbar__container'>
 
         <div className='navbar'>
             <div className='nav__logo'>
@@ -13,10 +13,10 @@ const Navbar = () => {
                 <p>Picture This</p>
             </div>
             <ul className='nav__menu'>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/cameras'>Cameras</Link></li>
-                <li><Link to='/lenses'>Lenses</Link></li>
-                <li>Lighting</li>
+                <li><Link className='link' to='/'>Home</Link></li>
+                <li><Link className='link' to='/cameras'>Cameras</Link></li>
+                <li><Link className='link' to='/lenses'>Lenses</Link></li>
+                <li><Link className='link' to='/'>Lighting</Link></li>
             </ul>
             <div className='login__cart'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="shopping__cart">
@@ -24,7 +24,7 @@ const Navbar = () => {
                 </svg>
                 <div className='cart__counter'>0</div>
 
-                <button class="cssbuttons-io">
+                <button class="cssbuttons-io nav_login">
                     <span>
                         Sign Up
                     </span>

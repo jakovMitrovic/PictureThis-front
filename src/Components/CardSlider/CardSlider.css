@@ -1,4 +1,4 @@
-.container{
+/* .container{
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -28,4 +28,51 @@
     color: rgb(0, 0, 0);
 
 }
+ */
+
+
+
+
+.product-carousel{
+    position: relative !important;
+    overflow: hidden !important;
+    padding: 28px;
+    width: 75%;
+    margin: auto;
+    align-items: center;
+
+}
+
+.product-container{
+    padding: 10px 10px;
+    display: flex !important;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+
+}
+
+.pre-btn, .next-btn {
+    border: none;
+    width: 50px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    font-size: xx-large;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.next-btn{
+    right: 0;
+    
+    
+}
+.pre-btn{
+    left: 0;
+}
+
 

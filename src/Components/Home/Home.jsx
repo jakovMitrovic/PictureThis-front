@@ -21,6 +21,7 @@ import brand7 from '../../Assets/Brands/panasonic.avif'
 import brand8 from '../../Assets/Brands/manfrotto.avif'
 
 import './Home.css'
+import BlogContainer from '../BlogContainer/BlogContainer'
 
 
 let cameras = [
@@ -54,6 +55,66 @@ let cameras = [
       brand: "Nikon z9",
       price: "3200$"
   },
+  {
+    img_url: canon,
+    brand: "Canon 1dx mk3",
+    price: "1100$"
+},
+{
+    img_url: nikon_z9,
+    brand: "Nikon z9",
+    price: "3200$"
+},
+{
+  img_url: canon,
+  brand: "Canon 1dx mk3",
+  price: "1100$"
+},
+{
+  img_url: nikon_z9,
+  brand: "Nikon z9",
+  price: "3200$"
+},
+{
+  img_url: canon,
+  brand: "Canon 1dx mk3",
+  price: "1100$"
+},
+{
+  img_url: nikon_z9,
+  brand: "Nikon z9",
+  price: "3200$"
+},
+{
+  img_url: canon,
+  brand: "Canon 1dx mk3",
+  price: "1100$"
+},
+{
+  img_url: nikon_z9,
+  brand: "Nikon z9",
+  price: "3200$"
+},
+{
+  img_url: canon,
+  brand: "Canon 1dx mk3",
+  price: "1100$"
+},
+{
+  img_url: nikon_z9,
+  brand: "Nikon z9",
+  price: "3200$"
+},
+{
+  img_url: canon,
+  brand: "Canon 1dx mk3",
+  price: "1100$"
+},
+{
+  img_url: nikon_z9,
+  brand: "Nikon z9",
+  price: "3200$"
+},
 ]
 
 
@@ -65,8 +126,9 @@ const Home = () => {
         <h1>Best Deals on Cameras</h1>
         <CardSlider  cameras={cameras} />
       </section>
-    
-
+      <section className='home_blogs'>
+        <BlogContainer/>
+      </section>
     
       <section className='brands'>
         <div>
