@@ -1,35 +1,3 @@
-/* .container{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
-    margin-left: 10vh;
-    margin-top: 0.5em;
-    
-}
-
-.slider{
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    gap: 2em;
-    margin-top: 0.5em;
-    
-}
-
-.msg{
-    font-size: 50px;
-   
-    font-style: italic;
-    color: rgb(112, 112, 112);
-}
-.msg span{
-    font-size: 100px;
-    color: rgb(0, 0, 0);
-
-}
- */
-
 
 
 
@@ -37,8 +5,9 @@
     position: relative !important;
     overflow: hidden !important;
     padding: 28px;
-    width: 75%;
+    width: 77%;
     margin: auto;
+    margin-top: -100px;
     align-items: center;
 
 }
@@ -55,7 +24,7 @@
     border: none;
     width: 50px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.265);
     position: absolute;
     font-size: xx-large;
     top: 0;
@@ -75,4 +44,8 @@
     left: 0;
 }
 
+.pre-btn:hover, .next-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 

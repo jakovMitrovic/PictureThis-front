@@ -8,8 +8,20 @@
     transition: 200ms;
     overflow: hidden;
     min-width: 15em;
-    min-height: 23em; 
+    min-height: 20em; 
     background-color: white;
+    /* border: solid rgb(162, 162, 162); */
+    margin: 15px 25px;
+
+    border-radius: 30px;
+
+  box-shadow: 10px 10px 20px #bebebe,
+             -15px -15px 30px #ffffff;
+
+
+ 
+
+
     
 }
 
@@ -18,12 +30,14 @@
     height: 12em;  
     width: 12em;
     margin: auto;
+ 
+    /* padding-top: 1em; */
 
 }
 
 .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 9;
+    z-index: 10;
 }
 
 img{
@@ -74,4 +88,34 @@ img{
     margin-top: -2em !important;
     padding: 0;
     
+}
+.card_link{
+    text-decoration: none !important;
+  }
+  
+
+  
+.sale_p{
+    color: rgb(252, 251, 251);
+    font-size: large;
+    width: 50%;
+    background-color: rgba(255, 0, 0, 0.782);
+    height: 1.8;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 0 0 10px 10px;
+
+}   
+
+.sale_container{
+
+    justify-content:right !important;
+    width: 100%;
+    height: 1.8em;
+    margin-bottom: 1.2vh !important;
 }

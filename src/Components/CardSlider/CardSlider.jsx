@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Card from '../Card/Card'
-import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
@@ -10,57 +9,47 @@ import './CardSlider.css'
 const CardSlider = ({ cameras }) => {
 
 
-   const btnPressPrev = () =>{
+    const btnPressPrev = () => {
 
 
-    const slider = document.querySelector('.product-container');
-    const width = slider.offsetWidth;
-    slider.scrollLeft -= width;
+        const slider = document.querySelector('.product-container');
+        const width = slider.offsetWidth;
+        slider.scrollLeft -= width;
 
-   }
+    }
 
-   const btnPressNext = () =>{
-    const slider = document.querySelector('.product-container');
-    const width = slider.offsetWidth;
-    slider.scrollLeft += width;
+    const btnPressNext = () => {
+        const slider = document.querySelector('.product-container');
+        const width = slider.offsetWidth;
+        slider.scrollLeft += width;
 
 
-   }
+    }
 
     return (
         <>
 
-            {/* <div className='container'>
-
-                <div className='slider'>
-
-                    {cameras?.map((camera, index) => (
-                        <Card key={index} brand={camera.brand} img_url={camera.img_url} price={camera.price} />
-                    ))}
-
-                </div>
-            </div> */}
 
             <div className='product-carousel'>
-                <button className='pre-btn' onClick={btnPressPrev}><p>&lt;</p></button>
+                <button className='pre-btn' onClick={btnPressPrev}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                    </svg>
+                </button>
 
                 <div className='product-container'>
 
                     {cameras?.map((camera, index) => (
-                        <Card key={index} brand={camera.brand} img_url={camera.img_url} price={camera.price} />
+
+                        camera.sale_price && <Card _id={camera._id} key={index} brand={camera.name} image={camera.image} price={camera.price} sale_price={camera.sale_price} />
                     ))}
                 </div>
-                <button className='next-btn' onClick={btnPressNext}><p>&gt;</p></button>
+                <button className='next-btn' onClick={btnPressNext}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
             </div>
-
-
-
-
-
-
-
-
-
 
         </>
     )

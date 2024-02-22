@@ -4,14 +4,22 @@ import './Products.css'
 
 
 
-const Products = ({products}) => {
+const Products = ({ products, category = false, brand = false }) => {
   return (
-    <div className='products__continer'>
-        {products?.map((product)=>(
-            <Card brand={product.brand} img_url={product.img_url} price={product.price} />
+    <>
+
+      <h1 className='category_name'>{category ? category : brand}</h1>
+      <div className='products__continer'>
+        {category && products?.map((product) => (
+          product.category === category && (<Card _id={product._id} brand={product.name} image={product.image} price={product.price} sale_price={product?.sale_price} />)
         ))}
-      
-    </div>
+
+        {brand && products?.map((product) => (
+          product.brand === brand && (<Card _id={product._id} brand={product.name} image={product.image} price={product.price} sale_price={product?.sale_price} />)
+        ))}
+
+      </div>
+    </>
   )
 }
 

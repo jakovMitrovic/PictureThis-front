@@ -3,8 +3,33 @@
     background-color: rgb(56, 56, 56);
     height: 20em;
     color: aliceblue;
+    margin: auto;
 }
 
 
 
+
+.brands{
+    padding-top: 20px;
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.brands img{
+    max-width: 100px;
+    display: flex;
+    transition: 200ms;
+    /* border-radius: 100px; */
+    
+}
+
+.brands img:hover{
+    transform: scale(1.1);
+}
 

@@ -152,7 +152,7 @@
     
   .cssbuttons-io::before {
     content: "";
-    background:rgb(91, 91, 91);
+    background:rgb(153, 156, 157);
     width: 120%;
     left: -10%;
     transform: skew(30deg);
@@ -182,5 +182,12 @@
   
  .nav_login{
   padding: 0;
+  background-color: aliceblue !important;
   font-size: large;
+  
+
+ }
+
+ .logo_link{
+  text-decoration: none;
  }

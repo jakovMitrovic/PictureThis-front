@@ -8,15 +8,18 @@ const Navbar = () => {
         <div className='navbar__container'>
 
         <div className='navbar'>
+
             <div className='nav__logo'>
                 <img src={logo} alt='logo' />
+            <Link className='logo_link' to={'/'}>
                 <p>Picture This</p>
+            </Link>
             </div>
             <ul className='nav__menu'>
                 <li><Link className='link' to='/'>Home</Link></li>
                 <li><Link className='link' to='/cameras'>Cameras</Link></li>
                 <li><Link className='link' to='/lenses'>Lenses</Link></li>
-                <li><Link className='link' to='/'>Lighting</Link></li>
+                <li><Link className='link' to='/other'>Other</Link></li>
             </ul>
             <div className='login__cart'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="shopping__cart">
