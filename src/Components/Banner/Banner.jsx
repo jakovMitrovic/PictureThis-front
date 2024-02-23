@@ -18,7 +18,6 @@ const Banner = () => {
             if(count >= banners.length - 1){
                 setCount(0)
             }else{
-                console.log(count)
                 setCount(count + 1)
             }
           }, 10000);

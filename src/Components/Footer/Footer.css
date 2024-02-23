@@ -11,8 +11,10 @@
 
 .brands{
     padding-top: 20px;
+    padding-bottom:  10px;
     display: flex;
-    max-width: 1000px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
     margin-left: auto !important;
     margin-right: auto !important;
     gap: 1em;
@@ -30,6 +32,23 @@
 }
 
 .brands img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
+.footer_bottom{
+    
+     height: 50%;
+    align-items: center !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer_bottom p{
+    margin: 50px 0 0 0 !important;
+}
+
+.footer_bottom h2{
+    margin: 0 !important;
+    font-size: 30px;
+}

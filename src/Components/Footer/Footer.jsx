@@ -20,6 +20,11 @@ const Footer = () => {
           </div>
         </Link>
       ))}
+
+      </div>
+      <div className='footer_bottom'>
+        <p>All rights reserved</p>
+        <h2>Picture This</h2>
       </div>
 
     </div>

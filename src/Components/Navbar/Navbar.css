@@ -168,8 +168,8 @@
   }
 
   .cart__counter{
-    width: 2vh;
-    height: 2vh;
+    width: 2.3vh;
+    height: 2.3vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +179,12 @@
     background-color: red;
     border-radius: 5vh;
   }
-  
+
+  .counter_change{
+    transform: scale(1.5);
+    box-shadow: 0 0 5px 3px #fd0000;
+  }
+
  .nav_login{
   padding: 0;
   background-color: aliceblue !important;
@@ -190,4 +195,9 @@
 
  .logo_link{
   text-decoration: none;
+ }
+
+ .cart_link{
+  text-decoration: none;
+  color: #262626;
  }

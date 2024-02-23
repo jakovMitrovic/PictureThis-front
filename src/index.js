@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProductContextProvider from './Context/ProductContext';
+import CartContextProvider from './Context/CartContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <CartContextProvider>
     <ProductContextProvider>
       <App />
     </ProductContextProvider>
+    </CartContextProvider>
   </React.StrictMode>
 );
 

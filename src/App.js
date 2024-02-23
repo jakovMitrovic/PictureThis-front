@@ -9,6 +9,7 @@ import ItemPage from './Components/ItemPage/ItemPage';
 import Other from './Components/Other/Other';
 import Brands from './Components/Brands/Brands';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import ShoppingCart from './Components/ShoppingCart/ShoppingCart';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/other' element={<Other/>}/>
         <Route path='/itemPage/:id' element={<ItemPage/>}/>
         <Route path='/brands/:brand' element={<Brands/>}/>
+        <Route path='/cart' element={<ShoppingCart/>}/>
       </Routes>
       <Footer/>
 

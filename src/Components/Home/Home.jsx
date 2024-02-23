@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   const products = useContext(ProductContext)
-  const sorted = products.sort((a, b) => (b.price - b.sale_price) - (a.price - a.sale_price));
+  const sorted = products.sort((a, b) => Math.ceil(100 - ((b.sale_price / b.price)*100)) - Math.ceil(100 - ((a.sale_price / a.price)*100)));
 
   return (
     <div>

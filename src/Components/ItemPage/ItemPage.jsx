@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import sony from '../../Assets/Cameras/sony_a1.jpg'
 import './ItemPage.css'
 import { useParams } from 'react-router-dom'
+import { CartContext } from '../../Context/CartContext'
 
 const ItemPage = () => {
   const { id } = useParams()
   const [product, setProduct] = useState({})
+  const [context, setContext] = useContext(CartContext)
 
 
   useEffect(() => {
@@ -32,7 +34,7 @@ const ItemPage = () => {
             }
           </div>
           <div className='button_container'>
-            <button class="cssbuttons-io"><span>Add to cart</span></button>
+            <button class="cssbuttons-io" onClick={()=>{setContext([...context, product])}}><span>Add to cart</span></button>
           </div>
         </div>
       </div>

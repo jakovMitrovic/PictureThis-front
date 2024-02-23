@@ -1,18 +1,18 @@
 import React from 'react'
 import './BlogCard.css'
 
-const BlogCard = () => {
+const BlogCard = ({blog}) => {
   return (
 
 
     <div class="blog_card">
       <div class="blog_image">
-        <img className='blog_card_img' src='https://www.adorama.com/col/UIimages/homepage/evergreen-banners/Callout_Image_Used.jpg' />
+        <img className='blog_card_img' src={blog.img} />
       </div>
       <div class="blog_content">
         <a href="#">
           <span class="blog_title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            {blog.title}
           </span>
         </a>
 
@@ -21,11 +21,11 @@ const BlogCard = () => {
           dolores, possimus pariatur animi temporibus nesciunt praesentium
         </p>
 
-        <button  class="cssbuttons-io blog_card_button">
+        {/* <button  class="cssbuttons-io blog_card_button">
           <span >
             Learn more
           </span>
-        </button>
+        </button> */}
       </div>
     </div>
 
