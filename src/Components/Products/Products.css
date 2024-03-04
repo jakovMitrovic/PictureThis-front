@@ -12,9 +12,45 @@
 }
 
 .category_name{
-    text-align: center;
+    /* text-align: center; */
     text-transform: capitalize;
     font-size: 40px;
     font-weight: 400;
+    width: 100px !important;
    
 }
+
+.product_sort{
+    display: flex;
+    gap: 10px;
+    width: 100px;
+    margin-bottom: 2em !important;
+    align-items: center;
+
+
+}
+.product_sort select{
+    border-radius: 10px;
+    font-size: large;
+    height: 2em;
+    border-color: aqua;
+}
+
+.add-product-selector option{
+    border: none;
+}
+
+.no_results{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+ 
+}
+
+.category_bar{
+    display: flex;
+    justify-content: center !important;
+    width: 65%;
+    margin: auto;
+}
+

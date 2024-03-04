@@ -9,7 +9,7 @@ const Other = () => {
 
     return (
       <div className='cameras'>
-        <Products products={products} category='lighting'/>
+        <Products products={products} category='other'/>
       </div>
     )
   

@@ -1,0 +1,42 @@
+.blogPostPage{
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.postDesc{
+    font-size: x-large;
+    font-weight: 400;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.content img{
+    margin: 2em auto;
+    display: flex;
+    justify-self: center;
+    width: fit-content;
+}
+
+.content a{
+    text-decoration: none;
+    color: rgb(84, 84, 84);
+}
+
+.content p{
+    font-size: larger;
+    font-weight:lighter;
+}
+
+.postTitle{
+    text-align: center;
+}
+
+.ql-video{
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    justify-self: center;
+    
+}

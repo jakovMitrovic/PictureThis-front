@@ -1,13 +1,13 @@
 import React from 'react'
 import './BlogCard.css'
+import { Link } from 'react-router-dom'
 
 const BlogCard = ({blog}) => {
   return (
-
-
+    <Link className='blog_cart_link' to={`blogPostPage/${blog._id}`}>
     <div class="blog_card">
       <div class="blog_image">
-        <img className='blog_card_img' src={blog.img} />
+        <img className='blog_card_img' src={blog.cover} />
       </div>
       <div class="blog_content">
         <a href="#">
@@ -17,17 +17,12 @@ const BlogCard = ({blog}) => {
         </a>
 
         <p class="blog_desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-          dolores, possimus pariatur animi temporibus nesciunt praesentium
+          {blog.description}
         </p>
 
-        {/* <button  class="cssbuttons-io blog_card_button">
-          <span >
-            Learn more
-          </span>
-        </button> */}
       </div>
     </div>
+    </Link>
 
 
   )

@@ -21,14 +21,22 @@
 .shopping_cart{
     width: 50%;
     margin: auto;
-    margin-top: 10em;
+    margin-top: 5em;
     margin-bottom: 10em;
 }
 
 .del{
     color: rgb(93, 93, 93);
-    width: 1em;
+    width: 2em;
+
 }
+
+.cart_del{
+    border: none;
+    background-color: rgba(234, 233, 232, 0.175);   
+    width: 2em;
+}
+
 .del:hover{
     color: rgba(255, 33, 33, 0.932);
     cursor: pointer;
@@ -37,4 +45,23 @@
 .shopping_price{
     color: rgb(97, 97, 97);
     font-weight: 400 !important;
+}
+
+.total_price{
+    text-align: center;
+    font-size: 50px;
+}
+
+.cart_button{
+    width: 15vw;
+    display: flex;
+    margin: auto !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_username{
+    text-align: center;
+    margin-bottom: 3em;
+    
 }

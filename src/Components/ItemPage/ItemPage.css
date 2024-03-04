@@ -7,6 +7,13 @@ h1{
     height: 100%;
 }
 
+@media(max-width:800px){
+    .itemPage{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
 .itemPage{
     display: flex;
     gap: 2em;
@@ -14,6 +21,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
     margin-top:3em;
+    height: 60vh !important;
 
 }
 
@@ -47,6 +55,10 @@ table{
 .price_item{
     margin: 20px 0;
 
+}
+
+.on_sale{
+    text-decoration: line-through !important;
 }
 
 .price_item h1{

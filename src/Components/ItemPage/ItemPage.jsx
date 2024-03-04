@@ -1,40 +1,53 @@
 import React, { useContext, useEffect, useState } from 'react'
 import sony from '../../Assets/Cameras/sony_a1.jpg'
 import './ItemPage.css'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { CartContext } from '../../Context/CartContext'
+import { UserContext } from '../../Context/UserContext'
+import AnimatedPage from '../Animation/AnimatedPage'
 
 const ItemPage = () => {
   const { id } = useParams()
   const [product, setProduct] = useState({})
   const [context, setContext] = useContext(CartContext)
+  const [user, setUser] = useContext(UserContext)
 
+  const navigate = useNavigate()
+
+  // const setCart = async() =>{
+  //   await fetch(`http://localhost:4000/users/cart/${user._id}`, {
+  //               method: 'PUT',
+  //               headers: {
+  //                   Accept: 'application/json',
+  //                   'Content-Type': 'application/json'
+  //               },
+  //               body: JSON.stringify([...context, product]),
+  //           }).then((res) => res.json()).then(alert('added')).then((data)=>setContext(data))
+  // }
 
   useEffect(() => {
-    console.log(id)
     fetch(`http://localhost:4000/products/product/${id}`)
       .then((res) => res.json())
       .then((data) => { setProduct(data) })
   }, [])
 
   return (
-    <>
+    <AnimatedPage>
       <div className='itemPage'>
         <div className='itemPage_image'>
           <img src={product.image} />
         </div>
         <div className='itemPage_info'>
           <h1 >{product.name}</h1>
-  
           <p className='item_subtitle'>{product.category === 'camera' ? product?.sensor : product.category === 'lens' ? product?.lensMount : ''}  {product.category}</p>
           <div className='price_container price_item'>
-            <h1 className={product.sale_price ? 'on_sale' : 'price'}>{product.price}</h1>
+            <h1 className={product.sale_price ? 'on_sale' : 'price'}>{product.price}$</h1>
             {product.sale_price &&
               <h1 className='price'>{product.sale_price}$</h1>
             }
           </div>
           <div className='button_container'>
-            <button class="cssbuttons-io" onClick={()=>{setContext([...context, product])}}><span>Add to cart</span></button>
+            <button class="cssbuttons-io" onClick={()=>{user.token ? setContext([...context, product]) : navigate('/login')}}><span>Add to cart</span></button>
           </div>
         </div>
       </div>
@@ -97,7 +110,7 @@ const ItemPage = () => {
         </table>
 
       </div>
-    </>
+    </AnimatedPage>
   )
 }
 

@@ -36,17 +36,19 @@
 }
 
 .footer_bottom{
-    
-     height: 50%;
+    margin-top: 20px;
+    height: 50%;
     align-items: center !important;
     justify-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
     
 }
-.footer_bottom p{
-    margin: 50px 0 0 0 !important;
+.footer_bottom img{
+    width: 100px;
 }
+
 
 .footer_bottom h2{
     margin: 0 !important;

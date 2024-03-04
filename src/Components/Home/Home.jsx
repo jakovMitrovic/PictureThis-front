@@ -6,6 +6,7 @@ import './Home.css'
 import BlogContainer from '../BlogContainer/BlogContainer'
 import { ProductContext } from '../../Context/ProductContext'
 import { Link } from 'react-router-dom'
+import AnimatedPage from '../Animation/AnimatedPage'
 
 
 
@@ -16,7 +17,7 @@ const Home = () => {
   const sorted = products.sort((a, b) => Math.ceil(100 - ((b.sale_price / b.price)*100)) - Math.ceil(100 - ((a.sale_price / a.price)*100)));
 
   return (
-    <div>
+    <AnimatedPage>
       <Banner />
       <section>
         <h1>Best Deals</h1>
@@ -37,7 +38,7 @@ const Home = () => {
         ))}
       </section> */}
 
-    </div>
+    </AnimatedPage>
   )
 }
 

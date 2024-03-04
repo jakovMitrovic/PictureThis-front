@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Card = (props) => {
 
+  
 
 
   return (
@@ -26,7 +27,7 @@ const Card = (props) => {
         <div className='desc'>
             <h2>{props.brand}</h2>
             <div className='price_container'>
-              <h2 className={props.sale_price ? 'on_sale' : 'price'}>{props.price}</h2>
+              <h2 className={props.sale_price ? 'on_sale' : 'price'}>{props.price}$</h2>
               {props.sale_price && 
                 <h2 className='price'>{props.sale_price}$</h2>
               }

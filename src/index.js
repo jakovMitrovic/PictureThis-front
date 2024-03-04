@@ -5,15 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProductContextProvider from './Context/ProductContext';
 import CartContextProvider from './Context/CartContext';
+import UserContextProvider from './Context/UserContext';
+import BlogContextProvider from './Context/BlogContext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <UserContextProvider>
+    <BlogContextProvider>
     <CartContextProvider>
     <ProductContextProvider>
       <App />
     </ProductContextProvider>
     </CartContextProvider>
+    </BlogContextProvider>
+    </UserContextProvider>
   </React.StrictMode>
 );
 

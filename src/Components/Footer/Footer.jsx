@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import './Footer.css'
 import brands from '../../Assets/brands'
 import { Link } from 'react-router-dom'
+import logo from '../../Assets/picturethislogodark.png'
 
 
 
@@ -24,7 +25,7 @@ const Footer = () => {
       </div>
       <div className='footer_bottom'>
         <p>All rights reserved</p>
-        <h2>Picture This</h2>
+        <img src={logo} />
       </div>
 
     </div>

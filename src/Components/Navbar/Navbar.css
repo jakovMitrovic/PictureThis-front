@@ -1,10 +1,14 @@
 .shopping__cart{
     width: 3vh;
 }
+.shopping__cart:hover{
+  background-color: rgba(92, 214, 216, 0.679);
+  box-shadow: rgba(92, 214, 216, 0.679) 0px 3px 10px;
+}
 .navbar__container{
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20 !important;
 }
 
 
@@ -15,6 +19,7 @@
     background-color: rgb(237, 237, 237);
     height: 5vh;
     overflow: hidden;
+
 
 
 }
